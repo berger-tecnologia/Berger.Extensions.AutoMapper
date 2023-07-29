@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Berger.Extensions.AutoMapper", "Berger.Extensions.AutoMapper\Berger.Extensions.AutoMapper.csproj", "{09bd34a7-267b-4fdb-8039-e5735b91993d}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{08efb687-1f99-4418-9d44-de8f8dbe12c9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{202d6b5e-e34d-46e9-950b-d65bd24ea5db}"
+	ProjectSection(SolutionItems) = preProject
+		..\build\Berger.Extensions.AutoMapper.yml = ..\build\Berger.Extensions.AutoMapper.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09bd34a7-267b-4fdb-8039-e5735b91993d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09bd34a7-267b-4fdb-8039-e5735b91993d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09bd34a7-267b-4fdb-8039-e5735b91993d}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09bd34a7-267b-4fdb-8039-e5735b91993d}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{09bd34a7-267b-4fdb-8039-e5735b91993d} = {08efb687-1f99-4418-9d44-de8f8dbe12c9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {386540a0-de95-44dc-87c9-a607ef817109}
+	EndGlobalSection
+EndGlobal
