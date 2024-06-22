@@ -4,9 +4,14 @@ namespace Berger.Extensions.AutoMapper
 {
     public static class AutoMapperConfiguration
     {
+        private static void ConfigureStartup<T>(this IServiceCollection services)
+        {
+            services.AddAutoMapper(typeof(T));
+        }
         public static void ConfigureAutoMapper<Startup, TSource, TDestination>(this IServiceCollection services)
         {
-            if (services == null) throw new ArgumentNullException(nameof(services));
+            if (services is null)
+                throw new ArgumentNullException(nameof(services));
 
             services.ConfigureStartup<Startup>();
 
@@ -14,16 +19,12 @@ namespace Berger.Extensions.AutoMapper
         }
         public static void ConfigureAutoMapper<Startup, D, I, V>(this IServiceCollection services)
         {
-            if (services == null) throw new ArgumentNullException(nameof(services));
+            if (services is null)
+                throw new ArgumentNullException(nameof(services));
 
             services.ConfigureStartup<Startup>();
 
             services.AddAutoMapper(typeof(D), typeof(I), typeof(V));
-        }
-
-        private static void ConfigureStartup<T>(this IServiceCollection services)
-        {
-            services.AddAutoMapper(typeof(T));
         }
     }
 }
