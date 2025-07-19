@@ -6,7 +6,7 @@ namespace Berger.Extensions.AutoMapper
     {
         private static void ConfigureStartup<T>(this IServiceCollection services)
         {
-            services.AddAutoMapper(typeof(T));
+            //services.AddAutoMapper(typeof(T));
         }
         public static void ConfigureAutoMapper<Startup, TSource, TDestination>(this IServiceCollection services)
         {
@@ -15,7 +15,7 @@ namespace Berger.Extensions.AutoMapper
 
             services.ConfigureStartup<Startup>();
 
-            services.AddAutoMapper(typeof(TSource), typeof(TDestination));
+            //services.AddAutoMapper(typeof(TSource), typeof(TDestination));
         }
         public static void ConfigureAutoMapper<Startup, D, I, V>(this IServiceCollection services)
         {
@@ -24,7 +24,7 @@ namespace Berger.Extensions.AutoMapper
 
             services.ConfigureStartup<Startup>();
 
-            services.AddAutoMapper(typeof(D), typeof(I), typeof(V));
+            //services.AddAutoMapper(typeof(D), typeof(I), typeof(V));
         }
     }
 }
